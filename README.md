@@ -35,18 +35,22 @@ cd YOUR-REPO-NAME
 
 ---
 
- ### 2️⃣ Install dependencies
+### 2️⃣ Install dependencies
 
 npm install
+
+---
 
 ### 3️⃣ Create a .env file
 Create a .env file in the project root and add your database config:
 
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=your_mysql_password
-DB_NAME=student_db
-PORT=3000
+- **DB_HOST**=localhost
+- **DB_USER**=root
+- **DB_PASSWORD**=your_mysql_password
+- **DB_NAME**=student_db
+- **PORT**=3000
+
+---
 
 ### 4️⃣ Set up the database
 Run the schema.sql manually in your MySQL client or let the app create the database and table automatically when you start the server.
@@ -63,9 +67,13 @@ CREATE TABLE IF NOT EXISTS students (
   class VARCHAR(50)
 );
 
+---
+
 ### 5️⃣ Run the server
 
 node server.js
+
+---
 
 ### 6️⃣ Open in your browser
 Visit 👉 http://localhost:3000
