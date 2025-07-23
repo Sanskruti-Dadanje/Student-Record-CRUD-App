@@ -1,0 +1,13 @@
+
+CREATE DATABASE IF NOT EXISTS studentdb;
+
+
+USE studentdb;
+
+
+CREATE TABLE IF NOT EXISTS students (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  roll_number VARCHAR(50) UNIQUE,
+  class VARCHAR(50)
+);
